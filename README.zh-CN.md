@@ -12,6 +12,11 @@
 
 </div>
 
+<p align="center">
+  如果这个项目对你有帮助，欢迎为仓库点 Star ⭐
+  <a href="https://github.com/VeryMath/AI4Math-Computational-Mathematics"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/VeryMath/AI4Math-Computational-Mathematics?style=social"></a>
+</p>
+
 ## 这个仓库是什么
 
 这个仓库是 AI4Math 计算数学方向的技能入口，收集用于把数学对象、方程、数据或论文片段转成可复核计算表示和可复现实验证据的技能包。

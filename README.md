@@ -13,6 +13,11 @@ element reasoning, and mathematical invariant computation.
 
 </div>
 
+<p align="center">
+  If this project helps your work, please consider giving the repository a Star ⭐
+  <a href="https://github.com/VeryMath/AI4Math-Computational-Mathematics"><img alt="GitHub stars" src="https://img.shields.io/github/stars/VeryMath/AI4Math-Computational-Mathematics?style=social"></a>
+</p>
+
 ## What This Repository Is
 
 This repository is the AI4Math home for computational mathematics skills. It
