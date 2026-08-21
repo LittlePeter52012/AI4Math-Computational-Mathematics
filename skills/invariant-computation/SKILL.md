@@ -153,6 +153,7 @@ Every final report should include:
 - coefficient ring or field and conventions;
 - backend route and version evidence;
 - exact command or code path used;
+- a non-null invariant value unless the computation failed;
 - validation checks and their results;
 - unresolved ambiguity and next repair route;
-- a classification caveat unless classification is theorem-backed.
+- either a classification caveat or explicit theorem evidence supporting its omission.

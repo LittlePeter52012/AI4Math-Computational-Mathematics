@@ -114,6 +114,10 @@ outputs/<run_id>/
 The JSON summary has a
 [versioned schema](schema/invariant_summary.schema.json) and a
 [known-answer example](examples/invariant_summary.example.json).
+The schema requires either `classification_caveat` or
+`classification_theorem_evidence`. Heuristic, partial, and failed results must
+also record remaining uncertainty and a next repair route. Every result other
+than `failed` must provide a non-null `invariant.value`.
 
 Only create the files that the task needs.
 
@@ -147,6 +151,7 @@ tests/
 Run:
 
 ```bash
+python3 -m pip install -e '.[dev]'
 python <path-to-skill-creator>/scripts/quick_validate.py skills/invariant-computation
 python3 -m unittest discover -s tests -v
 ```

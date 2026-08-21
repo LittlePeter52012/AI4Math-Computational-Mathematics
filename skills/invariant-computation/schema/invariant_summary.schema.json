@@ -163,7 +163,98 @@
     "classification_caveat": {
       "type": "string",
       "minLength": 1
+    },
+    "classification_theorem_evidence": {
+      "type": "string",
+      "minLength": 1
     }
   },
+  "allOf": [
+    {
+      "anyOf": [
+        {
+          "required": [
+            "classification_caveat"
+          ]
+        },
+        {
+          "required": [
+            "classification_theorem_evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "if": {
+        "properties": {
+          "invariant": {
+            "properties": {
+              "result_quality": {
+                "enum": [
+                  "exact",
+                  "certified_numerical",
+                  "heuristic",
+                  "partial"
+                ]
+              }
+            },
+            "required": [
+              "result_quality"
+            ]
+          }
+        },
+        "required": [
+          "invariant"
+        ]
+      },
+      "then": {
+        "properties": {
+          "invariant": {
+            "properties": {
+              "value": {
+                "not": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "invariant": {
+            "properties": {
+              "result_quality": {
+                "enum": [
+                  "heuristic",
+                  "partial",
+                  "failed"
+                ]
+              }
+            },
+            "required": [
+              "result_quality"
+            ]
+          }
+        },
+        "required": [
+          "invariant"
+        ]
+      },
+      "then": {
+        "properties": {
+          "remaining_uncertainty": {
+            "minItems": 1
+          },
+          "next_repair_route": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ],
   "additionalProperties": true
 }

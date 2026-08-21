@@ -32,6 +32,12 @@
       "evidence": "All vertices of the three edges are included."
     },
     {
+      "name": "boundary-map ranks",
+      "kind": "invariant_cross_check",
+      "status": "passed",
+      "evidence": "Over Q, rank d_1 = 2 and rank d_2 = 0, so b_0 = 3 - 2 = 1 and b_1 = (3 - 2) - 0 = 1."
+    },
+    {
       "name": "Euler characteristic",
       "kind": "invariant_cross_check",
       "status": "passed",
