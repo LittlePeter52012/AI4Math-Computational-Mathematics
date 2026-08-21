@@ -111,6 +111,10 @@ outputs/<run_id>/
 └── RUN_SUMMARY.md
 ```
 
+The JSON summary has a
+[versioned schema](schema/invariant_summary.schema.json) and a
+[known-answer example](examples/invariant_summary.example.json).
+
 Only create the files that the task needs.
 
 ## Safety And Review Rules
@@ -131,8 +135,10 @@ skills/
     README.md
     SKILL.md
     agents/openai.yaml
+    examples/
     manifest.yaml
     references/
+    schema/
 tests/
 ```
 

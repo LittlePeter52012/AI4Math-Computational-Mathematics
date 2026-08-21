@@ -97,6 +97,10 @@ outputs/<run_id>/
 └── RUN_SUMMARY.md
 ```
 
+`invariant_summary.json` 提供
+[版本化 schema](schema/invariant_summary.schema.json)和
+[已知答案示例](examples/invariant_summary.example.json)。
+
 只创建当前任务真正需要的文件。
 
 ## 安全与审查规则
@@ -117,8 +121,10 @@ skills/
     README.md
     SKILL.md
     agents/openai.yaml
+    examples/
     manifest.yaml
     references/
+    schema/
 tests/
 ```
 
