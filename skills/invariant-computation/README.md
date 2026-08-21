@@ -149,4 +149,4 @@ Then check that repository docs point back to the package Skill and that no loca
 
 ## License
 
-See [LICENSE](LICENSE).
+See [LICENSE](../../LICENSE).

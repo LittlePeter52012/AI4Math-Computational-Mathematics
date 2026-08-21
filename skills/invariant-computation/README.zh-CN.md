@@ -135,4 +135,4 @@ python3 -m unittest discover -s tests -v
 
 ## 许可证
 
-见 [LICENSE](LICENSE)。
+见 [LICENSE](../../LICENSE)。
